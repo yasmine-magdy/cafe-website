@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="widht=device-width,initial-scale=1.0">
+       <title> my website </title>
+       <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     
+
+   </head>
+  
+        <style>
+         .menu{
+          height: 60px;
+          width: 100%;
+          display: flex ;
+          align-items: center;
+          background: oldlace;
+          box-shadow: oldlace;
+          text-align: center;
+          box-sizing: border-box;
+          flex-direction: row;
+          justify-content: space-evenly;
+          position: fixed;
+    
+         }
+         .box{
+      width: 100%;
+      float: right;
+      border: 1px solid brown;
+      align-items: center;
+      justify-content: space-evenly;
+
+    }
+
+      .box ul li{ 
+        width: 190px;
+        float: left;
+        margin: 10px auto;
+       text-align: center;
+      }
+
+      .box ul li a{
+           text-decoration: none;
+           color:brown;
+           align-items: center;
+      }
+
+      .box ul li:hover{background-color:whitesmoke;}
+      .box ul li a:hover{color: black;}
+
+
+      .bacground{
+
+            width: 1500px;
+           height: 601px;
+           object-fit: cover;
+           object-position: 50% 50%
+          }
+
+         .textbox{
+            border-width: var(--brwe,1px);
+           background-color: rgba(var(--bge,255,255,255),var(--alpha-bge,1));
+          border-style: solid;
+          border-color: rgba(var(--brde,163,217,246),var(--alpha-brde,1));
+          width: 100px;
+          font-size: large;
+         }
+
+         .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+           max-width: 400px;
+            margin: auto;
+           text-align: center;
+          font-family: arial;
+         
+         }
+
+         .card button {
+           border: none;
+          outline: 0;
+          padding: 12px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+         font-size: 18px;
+         }
+
+         .card button:hover {
+           opacity: 0.7;
+         }
+
+         .column {
+            float: left;
+           width: 32%;
+           padding: 0 10px;
+         }
+
+         .row:after {
+           content: "";
+           display: table;
+            clear: both;
+            }
+            .container{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    
+    }
+    
+
+      
+       #widget {
+            margin: 0 auto;
+            width: 50%;
+            height: 500px;
+            border: thick solid rgb(14, 13, 13);
+            overflow: hidden;
+            display: -webkit-box;
+        }
+
+        #widget .news {
+            /* border: thin solid green; */
+            /* background-color: tan; */
+            /* margin: 15px 7px; */
+            color: white;
+            text-shadow: 3px 3px 5px black;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }    
+
+      </style>
+
+   </head>
+
+      <bodY>
+
+
+         <div class="menu">
+
+               <div class="box">
+               <ul type="none">
+                 <li><a href="http://">HOME</a></li>
+                 <li><a href="http://">MENU</a></li>
+                 <li><a href="http://">RESERVATION</a></li>
+                 <li><a href="http://">GALLERY</a></li>
+                 <li><a href="http://">ABOUT</a></li>
+                 <li><a href="http://">BLOG</a></li>
+                 <li><a href="http://">CONTACT</a></li>
+               </ul> 
+               </div>
+           
+               </div>
+            </div>
+
+         </div>
+
+         <div id=" text" class=" wr" data-testid="richTextElement">
+            <h1 class="font_3" style="text-align:center; font-size:55px;">
+             <span style="letter-spacing:0.02em;">
+                <span style="font-weight:bold;">  Welcome </span>
+             </span>
+            </h1>
+
+          </div>
+   
+         
+    
+            <div class="background" >
+ 
+              <img src="assets/images/pexels-helena-lopes-887723.jpg"  alt="" style="width: 1500px; height: 601px; object-fit: cover;object-position: 50% 50%;"> 
+
+            </div>
+
+ 
+
+              <div id=" text" class=" wr" data-testid="richTextElement">
+                 <h1 class="font_3" style="text-align:center; font-size:55px;">
+                    <span style="letter-spacing:0.02em;">
+                       <span style="font-weight:bold;"> Brown and Coffee</span>
+                    </span>
+                 </h1>
+
+                </div>
+
+            </div>
+
+         </div>
+         
+            <div class="row">
+
+               <div class="column">
+
+                 <div class="card">
+                    <img src="assets/images/pexels-photo-1581554.jpeg" alt="" style="width:100%">
+                    <h1> S E A R C H</h1>
+                    <div class="text1">
+                       <input type="search" placeholder="search"style="border: none; border-bottom: 2px solid brown">
+                    </div>
+                    <p><button>search</button></p>
+                 </div>
+              </div>
+
+              <div class="column">
+               <img src="assets/images/istockphoto-621696694-612x612.jpg" alt="" style="width:500px; height: 350px ; justify-content: space-between;">
+                </div>
+
+                <div class="column">
+
+                  <div class="card">
+                     <img src="assets/images/pexels-photo-2208004.webp" alt="" style="width:100%">
+                     <h1> Your Opinion</h1>
+                     <div class="text1">
+                        <input type="text" placeholder=""style="border: none; border-bottom: 2px solid brown">
+                     </div>
+                     <div>
+                        ..
+                     </div>
+                
+                     <p><button>Enter</button></p>
+                  </div>
+               </div>
+
+               
+              <div id=" text" class=" wr" data-testid="richTextElement">
+                 <h1 class="font_3" style="text-align:center; font-size:55px;">
+                  <span style="letter-spacing:0.02em;">
+                     <span style="font-weight:bold;">Coffee World</span>
+                  </span>
+                 </h1>
+
+               </div>
+
+               <div id="widget">
+
+                         <div class="news" style="background-image: url('assets/images/pexels-photo-1036444.webp'); ">
+                             001
+                         </div>
+                         <div class="news" style="background-image: url('assets/images/pexels-photo-1581554.jpeg');">
+                           002
+                         </div> 
+                         <div class="news" style="background-image: url(assets/images/pexels-photo-551993.jpeg);">
+                             003 
+                         </div>
+                         <div class="news" style="background-image: url(assets/images/pexels-helena-lopes-887723.jpg);">
+                             004 
+                         </div>
+                         <div class="news" style="background-image: url(assets/images/pexels-photo-2208004.webp);">
+                         </div>
+                
+               </div>
+                        
+               <div id=" text" class=" wr" data-testid="richTextElement">
+                            <h1 class="font_3" style="text-align:center; font-size:55px;">
+                              <span style="letter-spacing:0.02em;">
+                               <span style="font-weight:bold;"> SOON</span>
+                              </span>
+                            </h1>
+          
+               </div>
+            </div>
+
+         
+
+         </div>
+         <script>
+            
+        /* function fn() {
+            doAction();
+        } */
+
+        $(document).ready(function(){
+            doAction();
+        })
+
+        function doAction() {
+            $(".news").eq(0).delay(1000).animate({ width: "-=100%"},3000 , function () {
+                $(this).clone().appendTo("#widget").show().width("100%");
+                 $(this).remove();
+
+                doAction();
+            });
+        }
+
+
+         </script>
+
+      </body>
+
+ </html>
+
+
+
